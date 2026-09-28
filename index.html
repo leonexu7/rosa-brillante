@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSA BRILLANTE | Joyería & Accesorios en Oro Laminado</title>
+  <meta name="description" content="Joyería y accesorios en oro laminado y chapa de 18k con 2 meses de garantía. Aretes de diseño, perlas y cristales a precios accesibles ($120 y $150 MXN) en Santa Rosa, Puebla.">
+  
+  <!-- Tipografías de Prestigio: Cormorant Garamond (Editorial Serif) y Montserrat (Minimalist Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Iconos Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra Superior de Avisos -->
+  <aside class="top-announcement" aria-label="Avisos Rosa Brillante">
+    <div class="announcement-content">
+      <span class="announcement-item"><i data-lucide="shield-check"></i> Garantía en oro laminado de 2 meses</span>
+      <span class="separator">•</span>
+      <span class="announcement-item"><i data-lucide="gift"></i> Cajitas de regalo listas</span>
+      <span class="separator">•</span>
+      <span class="announcement-item"><i data-lucide="clock"></i> Atención las 24 hrs con aviso previo</span>
+      <span class="separator">•</span>
+      <span class="announcement-item"><i data-lucide="map-pin"></i> Santa Rosa, Puebla (Desde 2023)</span>
+    </div>
+  </aside>
+
+  <!-- Navegación Principal Flotante (Glassmorphism) -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      
+      <!-- Botón Menú Móvil -->
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <!-- Navegación Izquierda -->
+      <nav class="nav-links nav-left">
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="#pilares" class="nav-link">Valores</a>
+        <a href="#atelier" class="nav-link">Nosotros</a>
+      </nav>
+
+      <!-- Logotipo Central Minimalista -->
+      <div class="brand-logo">
+        <a href="#" class="logo-link">
+          <span class="logo-title">ROSA BRILLANTE</span>
+          <span class="logo-subtitle">JOYERÍA & ACCESORIOS</span>
+        </a>
+      </div>
+
+      <!-- Navegación Derecha & Controles -->
+      <div class="nav-actions">
+        <!-- Selector de Tema (Noir / Perle) -->
+        <button class="theme-toggle" id="themeToggle" title="Cambiar atmósfera visual (Oscuro / Claro)">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+          <span class="theme-text">Atmósfera</span>
+        </button>
+
+        <!-- Selector de Moneda -->
+        <div class="currency-selector">
+          <select id="currencySelect" aria-label="Seleccionar divisa">
+            <option value="MXN" selected>MXN ($) México</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+          </select>
+        </div>
+
+        <!-- Enlace Directo WhatsApp VIP -->
+        <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20tengo%20una%20duda%20sobre%20sus%20joyas" target="_blank" rel="noopener noreferrer" class="nav-phone-badge" title="Atención directa por WhatsApp">
+          <i data-lucide="message-circle"></i>
+          <span>+52 238 194 7741</span>
+        </a>
+
+        <!-- Botón Contacto -->
+        <a href="#contacto" class="btn btn-nav-cta">
+          <i data-lucide="map-pin"></i>
+          <span>Visítanos</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Menú Móvil Desplegable -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <span class="drawer-title">ROSA BRILLANTE</span>
+        <button class="drawer-close" id="closeDrawerBtn"><i data-lucide="x"></i></button>
+      </div>
+      <nav class="drawer-links">
+        <a href="#catalogo" class="drawer-link">Catálogo</a>
+        <a href="#pilares" class="drawer-link">Nuestros Valores</a>
+        <a href="#bespoke" class="drawer-link">Regalos & Asesoría</a>
+        <a href="#atelier" class="drawer-link">Nuestra Historia</a>
+        <a href="#contacto" class="drawer-link">Contacto & Tienda</a>
+      </nav>
+      <div class="drawer-footer">
+        <p class="drawer-hours"><i data-lucide="clock"></i> Atención 24 hrs (con aviso previo)</p>
+        <p class="drawer-location-tag"><i data-lucide="map-pin"></i> Madero 12, Sta Rosa, Puebla (Desde 2023)</p>
+        <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20me%20gustaría%20información%20sobre%20sus%20joyas" target="_blank" class="btn btn-gold btn-full">
+          <i data-lucide="message-circle"></i> WhatsApp (+52 238 194 7741)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: Calidez y Minimalismo Accesible -->
+    <section class="hero-section" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-bg-media">
+        <img src="assets/images/hero.jpg" alt="Joyería Fina en Oro Laminado" class="hero-img">
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="gem-point"></span>
+          <span>Joyería en Oro Laminado • Sta Rosa, Puebla</span>
+        </div>
+        <h1 class="hero-title">
+          El Brillo que Acompaña <span class="italic-serif">Tus Días</span>
+        </h1>
+        <p class="hero-description">
+          Aretes y accesorios en oro laminado y chapa de 18k con perlas y circonias seleccionadas.
+          Diseños en tendencia, precios justos y 2 meses de garantía para lucir radiante siempre.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn btn-gold">
+            <span>Explorar Catálogo</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20quisiera%20pedir%20información%20sobre%20sus%20aretes" target="_blank" class="btn btn-outline">
+            <i data-lucide="message-circle"></i>
+            <span>Escribir por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Indicador sutil de scroll -->
+      <a href="#pilares" class="scroll-down-hint" aria-label="Desplazar hacia abajo">
+        <span class="scroll-text">Conocer más</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- PILARES DE LA MARCA: Honestidad, Garantía y Calidez -->
+    <section class="pillars-section" id="pilares">
+      <div class="container">
+        <div class="section-tag text-center">Nuestra Filosofía</div>
+        <h2 class="section-title text-center">Joyería Hecha con Amor & Confianza</h2>
+        <div class="section-divider"></div>
+
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <span class="pillar-number">01</span>
+            <h3 class="pillar-title">Garantía Real de 2 Meses</h3>
+            <p class="pillar-text">
+              Cuidamos la durabilidad de cada una de nuestras piezas en oro laminado y chapa de 18k. Tienes 2 meses de garantía para comprar con total tranquilidad y respaldo.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <span class="pillar-number">02</span>
+            <h3 class="pillar-title">Moda & Precios Justos</h3>
+            <p class="pillar-text">
+              Creemos que lucir hermosa no debe costar una fortuna. Seleccionamos aretes modernos, perlas y cristales finos a precios accesibles ($120 y $150 MXN) para consentirte.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i data-lucide="heart-handshake"></i>
+            </div>
+            <span class="pillar-number">03</span>
+            <h3 class="pillar-title">Atención Cercana y Amable</h3>
+            <p class="pillar-text">
+              Somos un negocio local atendido con dedicación y cariño. Te ayudamos a elegir la pieza ideal y respondemos tus dudas con gusto directamente por WhatsApp o en nuestra tienda.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO INTERACTIVO CON FILTROS Y VISTA RÁPIDA -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        
+        <div class="catalog-header">
+          <div>
+            <span class="section-tag">Colección Exclusiva de Aretes</span>
+            <h2 class="section-title">Catálogo Rosa Brillante</h2>
+          </div>
+          <div class="catalog-header-meta">
+            <p class="catalog-subtitle">
+              Aretes de diseño, colgantes finos, huggies y broqueles con chapa de oro, perlas y circonias seleccionadas.
+              <br>
+              <span class="note-edit">Precios vigentes en Pesos Mexicanos (MXN). Envíos y entregas inmediatas.</span>
+            </p>
+            <div class="warranty-minimal-box" title="Garantía oficial Rosa Brillante">
+              <i data-lucide="shield-check"></i>
+              <span>Garantía en oro laminado de 2 meses</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Búsqueda y Ordenamiento Dinámico (Escalabilidad de Catálogo) -->
+        <div class="catalog-controls">
+          <div class="catalog-search-wrap">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="catalogSearchInput" placeholder="Buscar por modelo, gema o precio (ej. perla, corazón, 120, xuping)..." aria-label="Buscar aretes">
+            <button id="clearSearchBtn" class="clear-search-btn" style="display:none;" aria-label="Limpiar búsqueda"><i data-lucide="x"></i></button>
+          </div>
+          <div class="catalog-sort-wrap">
+            <label for="sortSelect" class="sort-label"><i data-lucide="arrow-down-up"></i> Ordenar:</label>
+            <select id="sortSelect" aria-label="Ordenar catálogo">
+              <option value="featured">Destacados</option>
+              <option value="price-asc">Precio: Menor a Mayor ($120 → $150 MXN)</option>
+              <option value="price-desc">Precio: Mayor a Menor ($150 → $120 MXN)</option>
+              <option value="name-asc">Nombre (A - Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Filtros de Categoría -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all">
+            <span>Todos los Aretes</span> <span class="filter-count">(66)</span>
+          </button>
+          <button class="filter-btn" data-category="perlas">
+            <span>Con Perla</span> <span class="filter-count">(11)</span>
+          </button>
+          <button class="filter-btn" data-category="cristales">
+            <span>Cristales & Color</span> <span class="filter-count">(13)</span>
+          </button>
+          <button class="filter-btn" data-category="figuras">
+            <span>Figuras & Charms</span> <span class="filter-count">(14)</span>
+          </button>
+          <button class="filter-btn" data-category="colgantes">
+            <span>Colgantes</span> <span class="filter-count">(12)</span>
+          </button>
+          <button class="filter-btn" data-category="huggies">
+            <span>Huggies & Broqueles</span> <span class="filter-count">(16)</span>
+          </button>
+        </div>
+
+        <!-- Grid de Joyas (Generado dinámicamente con las piezas reales) -->
+        <div class="products-grid" id="productsGrid"></div>
+
+        <div class="catalog-callout">
+          <p>¿Tienes dudas sobre algún modelo o buscas aretes para una ocasión especial?</p>
+          <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20tengo%20una%20duda%20sobre%20los%20modelos%20de%20aretes" target="_blank" class="link-gold">Escríbenos por WhatsApp y te orientamos con gusto <i data-lucide="arrow-right"></i></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REGALOS & ASESORÍA PERSONALIZADA -->
+    <section class="bespoke-section" id="bespoke">
+      <div class="container">
+        <div class="bespoke-inner">
+          <div class="bespoke-content">
+            <span class="section-tag">Regalos & Asesoría Personalizada</span>
+            <h2 class="bespoke-title">El Detalle Perfecto para Consentirte o Regalar</h2>
+            <p class="bespoke-text">
+              ¿Buscas el obsequio ideal para un cumpleaños, aniversario, graduación o simplemente darte un gusto? Te ayudamos con mucho gusto a elegir los aretes ideales según tu estilo, ocasión y presupuesto.
+            </p>
+            <div class="bespoke-steps">
+              <div class="step-item">
+                <span class="step-num">01</span>
+                <div>
+                  <h4>Elige tus Modelos Favoritos</h4>
+                  <p>Explora nuestro catálogo de 66 piezas con perlas, cristales y huggies.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-num">02</span>
+                <div>
+                  <h4>Asesoría Directa por WhatsApp</h4>
+                  <p>Te enviamos fotos adicionales, videos y resolvemos tus dudas al instante.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-num">03</span>
+                <div>
+                  <h4>Cajitas de Regalo Listas</h4>
+                  <p>Manejamos cajitas de regalo elegantes y listas para consentir o sorprender a quien más quieres.</p>
+                </div>
+              </div>
+            </div>
+            <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20busco%20un%20regalo%20o%20arete%20especial%20y%20me%20gustaría%20su%20asesoría" target="_blank" class="btn btn-gold">
+              <i data-lucide="sparkles"></i> Pedir Recomendación por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUESTRA HISTORIA: Cercanía & Pasión por los Detalles -->
+    <section class="atelier-section" id="atelier">
+      <div class="container">
+        <div class="atelier-grid">
+          
+          <div class="atelier-media">
+            <div class="media-frame">
+              <img src="assets/images/atelier.jpg" alt="Dedicación en Rosa Brillante Joyería" class="atelier-img" loading="lazy">
+              <div class="atelier-badge">
+                <span class="badge-year">Desde 2023</span>
+                <span class="badge-label">Santa Rosa, Puebla</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="atelier-text">
+            <span class="section-tag">Nuestra Historia</span>
+            <h2 class="section-title">Creciendo Contigo en Cada Detalle</h2>
+            <div class="section-divider-left"></div>
+            
+            <p class="atelier-paragraph">
+              En Rosa Brillante iniciamos en 2023 como una joyería local en Santa Rosa, Puebla, con una misión muy clara: ofrecer accesorios en oro laminado y chapa de 18k que combinen belleza, brillo duradero y precios justos al alcance de todas, respaldados con 2 meses de garantía y atención disponible las 24 horas del día con aviso previo.
+            </p>
+
+            <blockquote class="atelier-quote">
+              "Una joya bonita no necesita costar una fortuna para hacerte sentir única, elegante y segura de ti misma."
+            </blockquote>
+
+            <div class="atelier-stats">
+              <div class="stat-item">
+                <span class="stat-number">2023</span>
+                <span class="stat-label">Iniciamos en Sta Rosa</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2 Meses</span>
+                <span class="stat-label">Garantía en Oro Laminado</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24 hrs</span>
+                <span class="stat-label">Atención con Aviso Previo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TIENDA FÍSICA & ATENCIÓN POR WHATSAPP -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        
+        <div class="contact-card">
+          <div class="contact-left">
+            <span class="section-tag">Atención Personalizada</span>
+            <h2 class="contact-title">Visítanos en Nuestra Tienda o Escríbenos por WhatsApp</h2>
+            <p class="contact-desc">
+              Pasa a visitarnos en Santa Rosa, Puebla para ver y probarte las piezas en persona, o escríbenos directamente por WhatsApp para apartar tus modelos o pedir envío a domicilio.
+            </p>
+
+            <div class="contact-methods">
+              <div class="method-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <strong>Nuestra Tienda Física</strong>
+                  <p class="address-text">Madero 12, Barrio de Sta Rosa, 75689 Tercera Barrio Santa Rosa, Pue.</p>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Madero+12,+Barrio+de+Sta+Rosa,+75689+Tercera+Barrio+Santa+Rosa,+Puebla" target="_blank" rel="noopener noreferrer" class="link-maps-action">
+                    <i data-lucide="map"></i> Abrir ubicación en Google Maps
+                  </a>
+                </div>
+              </div>
+              <div class="method-item">
+                <i data-lucide="clock"></i>
+                <div>
+                  <strong>Horario de Atención Flexible</strong>
+                  <p>Disponibles las 24 hrs del día (con aviso previo)</p>
+                  <span class="schedule-note">Avísanos con anticipación por WhatsApp y te atendemos con gusto en tienda a la hora que te acomode</span>
+                </div>
+              </div>
+              <div class="method-item">
+                <i data-lucide="phone"></i>
+                <div>
+                  <strong>Atención Personalizada & WhatsApp</strong>
+                  <p><a href="tel:+522381947741" class="contact-tel-link">+52 238 194 7741</a></p>
+                  <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20tengo%20una%20duda%20sobre%20sus%20joyas" target="_blank" rel="noopener noreferrer" class="link-whatsapp-action">
+                    <i data-lucide="message-circle"></i> Escribir a WhatsApp (+52 238 194 7741)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form class="appointment-form" id="appointmentForm">
+              <h3 class="form-title">Envíanos un Mensaje o Aparta tu Joya</h3>
+              <div class="form-group">
+                <label for="clientName">Nombre Completo</label>
+                <input type="text" id="clientName" placeholder="Ej. Mariana Gómez" required>
+              </div>
+              <div class="form-group">
+                <label for="clientContact">Teléfono o WhatsApp</label>
+                <input type="tel" id="clientContact" placeholder="+52 238..." required>
+              </div>
+              <div class="form-group">
+                <label for="interestCategory">¿En qué te podemos ayudar?</label>
+                <select id="interestCategory">
+                  <option value="apartar">Apartar un modelo de arete ($120 / $150 MXN)</option>
+                  <option value="regalo">Cajita de regalo y recomendación para obsequio</option>
+                  <option value="horario24h">Coordinar visita o entrega (24 hrs con aviso previo)</option>
+                  <option value="garantia">Consulta sobre la garantía de 2 meses</option>
+                  <option value="envios">Información de envíos y entregas</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-gold btn-full">
+                <span>Enviar Consulta por WhatsApp</span>
+                <i data-lucide="send"></i>
+              </button>
+              <div class="form-note">
+                <i data-lucide="check-circle"></i> Te respondemos con gusto de inmediato.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA (Footer Minimalista de Lujo) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-title">ROSA BRILLANTE</span>
+            <span class="logo-subtitle">JOYERÍA & ACCESORIOS</span>
+          </div>
+          <p class="footer-tagline">
+            Accesorios en oro laminado y chapa de 18k pensados para hacerte brillar todos los días con piezas hermosas, accesibles y con garantía real de 2 meses.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20quisiera%20información%20sobre%20sus%20joyas" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link"><i data-lucide="message-circle"></i></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Madero+12,+Barrio+de+Sta+Rosa,+75689+Tercera+Barrio+Santa+Rosa,+Puebla" target="_blank" rel="noopener noreferrer" aria-label="Ubicación" class="social-link"><i data-lucide="map-pin"></i></a>
+            <a href="tel:+522381947741" aria-label="Llamar" class="social-link"><i data-lucide="phone"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Categorías</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo">Aretes con Perla</a></li>
+            <li><a href="#catalogo">Cristales & Circonias</a></li>
+            <li><a href="#catalogo">Figuras & Charms</a></li>
+            <li><a href="#catalogo">Aretes Colgantes</a></li>
+            <li><a href="#catalogo">Huggies & Broqueles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Nuestra Tienda</h4>
+          <ul class="footer-links">
+            <li class="footer-addr"><i data-lucide="map-pin"></i> Madero 12, Barrio de Sta Rosa, Puebla</li>
+            <li class="footer-addr"><i data-lucide="clock"></i> Atención 24 hrs (con aviso previo)</li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Madero+12,+Barrio+de+Sta+Rosa,+75689+Tercera+Barrio+Santa+Rosa,+Puebla" target="_blank" rel="noopener noreferrer" class="link-gold"><i data-lucide="external-link"></i> Abrir Google Maps</a></li>
+            <li><a href="tel:+522381947741"><i data-lucide="phone"></i> +52 238 194 7741</a></li>
+            <li><a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle"></i> WhatsApp Directo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4 class="footer-heading">Novedades & Descuentos</h4>
+          <p class="newsletter-desc">Recibe promociones especiales y entérate antes que nadie cuando lleguen nuevos modelos de aretes a la tienda.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Tu correo electrónico" required>
+              <button type="submit" aria-label="Suscribirse"><i data-lucide="arrow-right"></i></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2023 - 2026 ROSA BRILLANTE. Desde 2023 en Santa Rosa, Puebla.</p>
+        <div class="footer-legal">
+          <a href="#">Garantía de 2 Meses</a>
+          <span>•</span>
+          <a href="#">Cajitas de Regalo</a>
+          <span>•</span>
+          <a href="#contacto">Atención 24 hrs por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE VISTA RÁPIDA (QUICK VIEW) -->
+  <div class="modal-backdrop" id="quickViewModal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Cerrar ventana">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img src="" alt="Joya" id="modalImg" class="modal-main-img">
+          <button class="btn-toggle-photo" id="togglePhotoBtn" type="button">
+            <i data-lucide="crop"></i> <span>Ver recorte centrado</span>
+          </button>
+        </div>
+        
+        <div class="modal-details">
+          <span class="modal-tag" id="modalTag">Colección Aretes</span>
+          <h2 class="modal-title" id="modalTitle">Nombre del Arete</h2>
+          <div class="modal-metal" id="modalMetal">Chapa de Oro 18k</div>
+          
+          <div class="modal-price" id="modalPrice">$0 MXN</div>
+          
+          <div class="warranty-minimal-box modal-warranty-box" title="Garantía oficial Rosa Brillante">
+            <i data-lucide="shield-check"></i>
+            <span>Garantía en oro laminado de 2 meses</span>
+          </div>
+          
+          <div class="modal-specs">
+            <h4>Detalles & Características:</h4>
+            <ul id="modalSpecsList">
+              <!-- Rellenado dinámicamente con JS -->
+            </ul>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#" id="modalWhatsAppBtn" target="_blank" class="btn btn-gold btn-full">
+              <i data-lucide="message-circle"></i> Pedir por WhatsApp (Entrega Rápida)
+            </a>
+            <button class="btn btn-outline btn-full" id="modalReserveBtn">
+              <i data-lucide="map-pin"></i> Consultar Disponibilidad en Tienda
+            </button>
+          </div>
+
+          <div class="modal-guarantees">
+            <span><i data-lucide="shield-check"></i> Garantía 2 Meses</span>
+            <span><i data-lucide="gift"></i> Cajita de Regalo Lista</span>
+            <span><i data-lucide="clock"></i> Atención 24 hrs con aviso</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Botón flotante de WhatsApp siempre accesible -->
+  <a href="https://wa.me/522381947741?text=Hola%20Rosa%20Brillante,%20tengo%20una%20duda%20sobre%20sus%20joyas" target="_blank" class="floating-whatsapp" title="Atención directa por WhatsApp (+52 238 194 7741)">
+    <i data-lucide="message-circle"></i>
+    <span class="whatsapp-tooltip">¿Dudas o pedidos? WhatsApp (+52 238 194 7741)</span>
+  </a>
+
+  <!-- Notificaciones tipo Toast elegantes -->
+  <div class="toast-notification" id="toast">
+    <span id="toastMessage">Mensaje</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script>
+    // Inicializar iconos de Lucide
+    lucide.createIcons();
+  </script>
+</body>
+</html>
