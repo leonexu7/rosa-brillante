@@ -1388,8 +1388,12 @@ const newsletterForm = document.getElementById('newsletterForm');
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Aplicar tema y divisa inicial (Prioridad en MXN)
   applyTheme(currentTheme);
+  const drawerCurrencySelect = document.getElementById('drawerCurrencySelect');
   if (currencySelect) {
     currencySelect.value = currentCurrency;
+  }
+  if (drawerCurrencySelect) {
+    drawerCurrencySelect.value = currentCurrency;
   }
 
   // 2. Renderizar catálogo de productos reales y conteo dinámico
@@ -1404,6 +1408,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currencySelect) {
     currencySelect.addEventListener('change', (e) => {
       currentCurrency = e.target.value;
+      if (drawerCurrencySelect) drawerCurrencySelect.value = currentCurrency;
+      updatePrices();
+    });
+  }
+
+  if (drawerCurrencySelect) {
+    drawerCurrencySelect.addEventListener('change', (e) => {
+      currentCurrency = e.target.value;
+      if (currencySelect) currencySelect.value = currentCurrency;
       updatePrices();
     });
   }
@@ -1724,6 +1737,11 @@ function openQuickView(productId) {
   modal.classList.add('active');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+
+  const modalContainer = modal.querySelector('.modal-container');
+  const modalBody = modal.querySelector('.modal-body');
+  if (modalContainer) modalContainer.scrollTop = 0;
+  if (modalBody) modalBody.scrollTop = 0;
 
   if (window.lucide) lucide.createIcons();
 }

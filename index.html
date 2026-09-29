@@ -2,7 +2,7 @@
 <html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>ROSA BRILLANTE | Joyería & Accesorios en Oro Laminado</title>
   <meta name="description" content="Joyería y accesorios en oro laminado y chapa de 18k con 2 meses de garantía. Aretes de diseño, perlas y cristales a precios accesibles ($120 y $150 MXN) en Santa Rosa, Puebla.">
   
@@ -66,9 +66,10 @@
         </button>
 
         <!-- Selector de Moneda -->
-        <div class="currency-selector">
+        <div class="currency-selector" title="Seleccionar divisa">
+          <i data-lucide="coins" class="currency-icon"></i>
           <select id="currencySelect" aria-label="Seleccionar divisa">
-            <option value="MXN" selected>MXN ($) México</option>
+            <option value="MXN" selected>MXN ($)</option>
             <option value="USD">USD ($)</option>
             <option value="EUR">EUR (€)</option>
           </select>
@@ -94,6 +95,14 @@
       <div class="drawer-header">
         <span class="drawer-title">ROSA BRILLANTE</span>
         <button class="drawer-close" id="closeDrawerBtn"><i data-lucide="x"></i></button>
+      </div>
+      <div class="drawer-currency-row">
+        <span class="drawer-currency-label"><i data-lucide="coins"></i> Moneda:</span>
+        <select id="drawerCurrencySelect" aria-label="Seleccionar divisa móvil">
+          <option value="MXN" selected>MXN ($) Pesos Mexicanos</option>
+          <option value="USD">USD ($) Dólares</option>
+          <option value="EUR">EUR (€) Euros</option>
+        </select>
       </div>
       <nav class="drawer-links">
         <a href="#catalogo" class="drawer-link">Catálogo</a>
@@ -131,6 +140,19 @@
           Aretes y accesorios en oro laminado y chapa de 18k con perlas y circonias seleccionadas.
           Diseños en tendencia, precios justos y 2 meses de garantía para lucir radiante siempre.
         </p>
+
+        <!-- Barra de Confianza Móvil: Garantía y Moneda siempre a la vista -->
+        <div class="hero-trust-bar">
+          <div class="trust-badge">
+            <i data-lucide="shield-check"></i>
+            <span>Garantía de 2 Meses en Oro Laminado</span>
+          </div>
+          <div class="trust-badge">
+            <i data-lucide="circle-dollar-sign"></i>
+            <span>Precios en Pesos Mexicanos (MXN)</span>
+          </div>
+        </div>
+
         <div class="hero-actions">
           <a href="#catalogo" class="btn btn-gold">
             <span>Explorar Catálogo</span>
